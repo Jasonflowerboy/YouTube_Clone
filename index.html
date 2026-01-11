@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "This is a responsive YouTube clone made by Jason, using pure HTML and CSS.">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="styles/youtube.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    style="
+      padding-bottom: 30px;
+      padding-top: 90px;
+      padding-left: 120px;
+      padding-right: 25px;
+      background-color: rgb(248, 248, 248);
+    "
+  >
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="header-tooltips">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="header-tooltips">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-div">
+          <img class="upload" src="icons/upload.svg" />
+          <div class="header-tooltips">Create</div>
+        </div>
+        <div class="youtube-apps-div">
+          <img class="youtube-apps" src="icons/youtube-apps.svg" />
+          <div class="header-tooltips">YouTube apps</div>
+        </div>
+
+        <div class="notifications-div">
+          <img class="notifications" src="icons/notifications.svg" />
+          <div class="notifications-number">9+</div>
+          <div class="header-tooltips">Notifications</div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/jasonmani-rai-0782b132a/">
+          <div class="channel-icon-div">
+            <img class="channel-icon" src="channels/profile-1.jpg" />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img class="sidebar-icon" src="icons/home.svg" />
+        <p class="sidebar-text">Home</p>
+      </div>
+      <div class="sidebar-link">
+        <img class="sidebar-icon" src="icons/explore.svg" />
+        <p class="sidebar-text">Explore</p>
+      </div>
+      <div class="sidebar-link">
+        <img class="sidebar-icon" src="icons/subscriptions.svg" />
+        <p class="sidebar-text">Subscriptions</p>
+      </div>
+      <div class="sidebar-link">
+        <img class="sidebar-icon" src="icons/originals.svg" />
+        <p class="sidebar-text">Originals</p>
+      </div>
+      <a class="tag" href="https://music.youtube.com/">
+        <div class="sidebar-link">
+          <img class="sidebar-icon" src="icons/youtube-music.svg" />
+          <p class="sidebar-text">Youtube Music</p>
+        </div>
+      </a>
+
+      <div class="sidebar-link">
+        <img class="sidebar-icon" src="icons/library.svg" />
+        <p class="sidebar-text">Library</p>
+      </div>
+    </nav>
+
+    <main>
+<section class="video-grid">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+          <div class="thumbnail-div">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+            <div class="timestamp-div">14:20</div>
+          </div>
+        </a>
+        <div class="video-info-grid">
+          <a href="https://www.youtube.com/@mkbhd">
+            <div class="channel-picture">
+                <div class = "hover-relative-div">
+                     <img class="profile-picture" src="channels/channel-1.jpeg" />
+                      <div class = "channel-hover-grid">
+                <img class = "profile-hover" src = "channels/channel-1.jpeg">
+                <div class = "details-hover">
+                    <p class = "name-hover">Marques Brownlee</p>
+                    <p class = "sub-hover">20.5M Subscribers</p>
+                </div>
+              </div>
+                </div>
+            </div>
+          </a>
+        <div class="video-stats">
+            <a class="tag" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+            <a class="tag" href="https://www.youtube.com/mkbhd">
+              <p class="video-author">Marques Brownlee</p>
+            </a>
+            <p class="video-views">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=3RxFL0XJc1A">
+          <div class="thumbnail-div">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.jpg" />
+            <div class="timestamp-div">23:23</div>
+          </div>
+        </a>
+        <div class="video-info-grid">
+          <a href="https://www.youtube.com/@Tuonto">
+            <div class="channel-picture">
+                <div class = "hover-relative-div">
+                    <img class="profile-picture" src="channels/channel-3.jpeg" />
+                    <div class = "channel-hover-grid">
+                        <img class ="profile-hover" src = "channels/channel-3.jpeg">
+                        <div class = "details-hover">
+                            <p class = "name-hover">Tuonto</p>
+                            <p class ="sub-hover">1.52M Subscribers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </a>
+          <div class="video-stats">
+            <a class="tag" href="https://www.youtube.com/watch?v=3RxFL0XJc1A">
+              <p class="video-title">IF I ROLL I SHOWER</p>
+            </a>
+            <a class="tag" href="https://www.youtube.com/@Tuonto">
+              <p class="video-author">Tuonto</p>
+            </a>
+            <p class="video-views">138k views &middot; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=HjU-83l261A">
+          <div class="thumbnail-div">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.jpg" />
+            <div class="timestamp-div">0:07</div>
+          </div>
+        </a>
+        <div class="video-info-grid">
+          <a href="https://www.youtube.com/@Jasonflowerboy">
+            <div class="channel-picture">
+                <div class = "hover-relative-div">
+                     <img class="profile-picture" src="channels/channel-4.jpeg" />
+                     <div class = "channel-hover-grid">
+                        <img class = "profile-hover" src = "channels/channel-4.jpeg">
+                        <div class = "details-hover">
+                            <p class = "name-hover">Jason Rise (Fury)</p>
+                            <p class = "sub-hover">1K Subscribers</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+          </a>
+          <div class="video-stats">
+            <a class="tag" href="https://www.youtube.com/watch?v=HjU-83l261A">
+              <p class="video-title">Euphoria Feelings</p>
+            </a>
+            <a class="tag" href="https://www.youtube.com/@Jasonflowerboy">
+              <p class="video-author">Jason Rise (Fury)</p>
+            </a>
+            <p class="video-views">106 views &middot; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=Bv4CqIxqTMA&t=3327s">
+          <div class="thumbnail-div">
+            <img class="thumbnail" src="thumbnails/Thumbnail-5.jpg" />
+            <div class="timestamp-div">1:00:15</div>
+          </div>
+        </a>
+        <div class="video-info-grid">
+          <a href="https://www.youtube.com/@dota2">
+            <div class="channel-picture">
+                <div class = "hover-relative-div">
+                    <img class="profile-picture" src="channels/channel-5.jpeg" />
+                    <div class = "channel-hover-grid">
+                        <img class = "profile-hover" src = "channels/channel-5.jpeg">
+                        <div class = "details-hover">
+                            <p class = "name-hover">Dota 2</p>
+                            <p class = "sub-hover">1.27M Subscribers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </a>
+          <div class="video-stats">
+            <a
+              class="tag"
+              href="https://www.youtube.com/watch?v=Bv4CqIxqTMA&t=3327s"
+            >
+              <p class="video-title">
+                True Sight : The International 2018 Finals
+              </p>
+            </a>
+            <a class="tag" href="https://www.youtube.com/@dota2">
+              <p class="video-author">Dota 2</p>
+            </a>
+            <p class="video-views">17M views &middot; 6 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=WRwtU5BEMJw&list=RDWRwtU5BEMJw&start_radio=1">
+             <div class="thumbnail-div">
+          <div class="timestamp-div">3:32</div>
+          <img class="thumbnail" src="thumbnails/Thumbnail-6.jpg" />
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@OfficialJaden">
+                <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                       <img class="profile-picture" src="channels/channel-6.jpeg" />
+                       <div class = "channel-hover-grid">
+                        <img class = "profile-hover" src = "channels/channel-6.jpeg">
+                        <div class = "details-hover">
+                            <p class = "name-hover">Jaden</p>
+                            <p class = "sub-hover">3.69M Subscribers</p>
+                        </div>
+                       </div> 
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=WRwtU5BEMJw&list=RDWRwtU5BEMJw&start_radio=1">
+                 <p class="video-title">
+              Jaden - Cabin Fever (GRAMMY Museum at Home Series Performance)
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@OfficialJaden">
+                <p class="video-author">Jaden</p>
+            </a>
+            <p class="video-views">6.2M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=9jzugIzksag&list=RD9jzugIzksag&start_radio=1">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-7.jpg" />
+          <div class="timestamp-div">3:21</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@SBSKPOP">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-7.jpeg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-7.jpeg">
+                            <div class = "details-hover">
+                                <p class = "name-hover" style = "font-size: 12px;">SBSKPOP X INKIGAYO</p>
+                                <p class = "sub-hover">8.59M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+            
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=9jzugIzksag&list=RD9jzugIzksag&start_radio=1">
+                <p class="video-title">
+              [단독샷캠4K] 블랙핑크 'Pink Venom' 단독샷 별도녹화│BLACKPINK ONE
+              TAKE STAGE @SBS Inkigayo 220828
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@SBSKPOP">
+                 <p class="video-author">SBSKPOP X INKIGAYO</p>
+            </a>
+            <p class="video-views">33M views &middot; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=ZfIXXgqxVn8">
+             <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-12.jpg" />
+          <div class="timestamp-div">1:32</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@aniplex">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                           <img class="profile-picture" src="channels/channel-12.jpg" />
+                           <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-12.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover" style = "font-size: 10px;">アニプレックス チャンネル</p>
+                                <p class = "sub-hover">3.7M Subscribers</p>
+                            </div>
+                           </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=ZfIXXgqxVn8">
+                <p class="video-title">
+              『劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来』本予告
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@aniplex">
+                <p class="video-author">アニプレックス チャンネル</p>
+            </a>
+            <p class="video-views">15M views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=iEr6m_QCtFo">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-11.jpg" />
+          <div class="timestamp-div">13:03</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@NewJeans_official">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-11.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-11.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">NewJeans</p>
+                                <p class = "sub-hover">8.14M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=iEr6m_QCtFo">
+                 <p class="video-title">
+              [About Jeans] 걍해린 1걍. 파리 나들이 | HAERIN vlog
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@NewJeans_official">
+                 <p class="video-author">NewJeans</p>
+            </a>
+            <p class="video-views">1.4M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=0ur8Cd-_Rls">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-10.jpg" />
+          <div class="timestamp-div">3:01</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@jumpchannel">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-10.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-10.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover" style = "font-size: 12px;">SHONEN JUMP CHANNEL OFFICIAL</p>
+                                <p class = "sub-hover">2.32M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=0ur8Cd-_Rls">
+                <p class="video-title">『呪術廻戦』25巻”最強対最強”決戦ムービー</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@jumpchannel">
+                <p class="video-author">SHONEN JUMP CHANNEL OFFICIAL</p>
+            </a>
+            <p class="video-views">5.5M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=GhVRPXzMXRM&list=RDGhVRPXzMXRM&start_radio=1">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-13.jpg" />
+          <div class="timestamp-div">4:15</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@harrenysk">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-13.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-13.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">harrenysk</p>
+                                <p class = "sub-hover">9.71K Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=GhVRPXzMXRM&list=RDGhVRPXzMXRM&start_radio=1">
+                <p class="video-title">TEKKEN 8 Mashup - My Last Stand x Heat Haze Shadow</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@harrenysk">
+                <p class="video-author">harrenysk</p>
+            </a>
+            <p class="video-views">1.6M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=GDuI9G_UKcM&t=99s">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-16.jpg" />
+          <div class="timestamp-div">3:50</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@jumpchannel">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-10.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-10.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover" style = "font-size: 12px;">SHONEN JUMP CHANNEL OFFICIAL</p>
+                                <p class = "sub-hover">2.32M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=GDuI9G_UKcM&t=99s">
+                <p class="video-title">NARUTO 25th Promotion Video</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@jumpchannel">
+                <p class="video-author">SHONEN JUMP CHANNEL OFFICIAL</p>
+            </a>
+            <p class="video-views">1.6M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=eWPYxw_yqW4&list=RDeWPYxw_yqW4&start_radio=1">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-15.jpg" />
+          <div class="timestamp-div">4:54</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@The_FirstTake">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-15.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-15.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">THE FIRST TAKE</p>
+                                <p class = "sub-hover">11.4M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=eWPYxw_yqW4&list=RDeWPYxw_yqW4&start_radio=1">
+                <p class="video-title">Cö shu Nie - asphyxia （piano ver.) / THE FIRST TAKE</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@The_FirstTake">
+                <p class="video-author">THE FIRST TAKE</p>
+            </a>
+            <p class="video-views">7.6M views &middot; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=nxbewuvUoaQ">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-17.jpg" />
+          <div class="timestamp-div">3:38</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@KBSKpop">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-17.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-17.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">KBS Kpop</p>
+                                <p class = "sub-hover">9.95M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=nxbewuvUoaQ">
+                <p class="video-title">[뮤뱅 원테이크 4k] 에스파 (aespa) 'Dirty Work' 4k Bonus Ver. @뮤직뱅크 (Music Bank) 250704</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@KBSKpop">
+                <p class="video-author">KBS Kpop</p>
+            </a>
+            <p class="video-views">6M views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=pAEST8e9ovc">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-14.jpg" />
+          <div class="timestamp-div">2:25</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@VillixEdits">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-14.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-14.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">Villix</p>
+                                <p class = "sub-hover">1.87K Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=pAEST8e9ovc">
+                <p class="video-title">one minute of additional time [ BLUELOCK ]</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@VillixEdits">
+                <p class="video-author">Villix</p>
+            </a>
+            <p class="video-views">686K views &middot; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=LzNw5pgVhZU&t=26s">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-18.jpg" />
+          <div class="timestamp-div">5:32</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@SteezyKane">
+                  <div class="channel-picture">
+            <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-18.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-18.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">Steezy Kane</p>
+                                <p class = "sub-hover">3.74M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=LzNw5pgVhZU&t=26s">
+                <p class="video-title">Adrian's Kickback / Riot</p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@SteezyKane">
+                <p class="video-author">Steezy Kane</p>
+            </a>
+            <p class="video-views">1.1M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=Z2SjqcGJVeg">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-19.jpg" />
+          <div class="timestamp-div">1:16</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/@crunchyroll">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-19.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-19.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">Crunchyroll</p>
+                                <p class = "sub-hover">8.12M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=Z2SjqcGJVeg">
+            <p class="video-title">
+              Bakugo Lives | My Hero Academia FINAL SEASON
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/@crunchyroll">
+                 <p class="video-author">Crunchyroll</p>
+            </a>
+            <p class="video-views">212K views &middot; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+
+           <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=6U8OAC6sN9I&list=RD6U8OAC6sN9I&start_radio=1">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-20.jpg" />
+          <div class="timestamp-div">4:00</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-20.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-20.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">twenty one pilots</p>
+                                <p class = "sub-hover">14M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=6U8OAC6sN9I&list=RD6U8OAC6sN9I&start_radio=1">
+            <p class="video-title">
+              Neon Gravestones
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">
+                 <p class="video-author">twenty one pilots</p>
+            </a>
+            <p class="video-views">8.9M views &middot; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="video-preview">
+        <a href = "https://www.youtube.com/watch?v=3rqflHygnBI">
+            <div class="thumbnail-div">
+          <img class="thumbnail" src="thumbnails/thumbnail-21.jpg" />
+          <div class="timestamp-div">25:25</div>
+        </div>
+        </a>
+        <div class="video-info-grid">
+            <a href = "https://www.youtube.com/channel/ballislife">
+                 <div class="channel-picture">
+                    <div class = "hover-relative-div">
+                        <img class="profile-picture" src="channels/channel-21.jpg" />
+                        <div class = "channel-hover-grid">
+                            <img class = "profile-hover" src = "channels/channel-21.jpg">
+                            <div class = "details-hover">
+                                <p class = "name-hover">Ballislife</p>
+                                <p class = "sub-hover">4.34M Subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </a>
+          <div class="video-stats">
+            <a class = "tag" href = "https://www.youtube.com/watch?v=3rqflHygnBI">
+            <p class="video-title">
+              Rob vs Zae... The GREATEST 1v1 Game Of ALL TIME | Summer Jam 2025
+            </p>
+            </a>
+            <a class = "tag" href = "https://www.youtube.com/channel/ballislife">
+                 <p class="video-author">Ballislife</p>
+            </a>
+            <p class="video-views">429K views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <a class = "tag" href = "https://github.com/Jasonflowerboy">
+   <div>&copy;Jasonflowerboy 2026 - Journey To Greatness.</div> 
+      </a> 
+    </footer>
+  </body>
+</html>

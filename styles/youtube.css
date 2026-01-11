@@ -1,0 +1,199 @@
+ /*.search-bar
+     {
+       display:block;
+     } moved to header.css, we dont need it anymore tbh cuz its now moved to inside a div which is a block element*/
+
+     .video-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap:20px;
+      row-gap:45px;
+     /* background-color: rgba(226, 216, 216, 0.197); */
+      
+     }
+        
+   /* .video-preview
+    {
+        width :100%;
+        display:inline-block;
+        vertical-align:top;
+        aba chaidena mams, hami grid use garcha
+    } replaced its work by grid-template-columns*/
+    .thumbnail-div{
+        margin-bottom:7px;
+        position: relative;
+    }
+    .timestamp-div{
+      position:absolute;
+      bottom:7px;
+      right:5px;
+      background-color: rgba(0, 0, 0, 0.741);
+      color:white;
+      padding:4px 4px 4px 4px;
+      border-radius: 2px;
+      font-size: 10px;
+      font-weight:500;
+      font-family:Roboto,Arial;
+    }
+
+    .thumbnail
+    {
+        width:100%;
+        cursor: pointer;
+    }
+
+    .video-title
+    {
+        font-size:14px;
+        margin-bottom:9px;
+        margin-left:4px;
+        font-weight:500;
+        cursor: pointer;
+    }
+    .video-author,.video-views{
+         margin-bottom:0px;
+        margin-left:4px;
+        font-size:10px;
+        color : rgb(96, 96, 96);
+    }
+    .video-author{
+        margin-bottom:3px;
+        cursor: pointer;
+    }
+    
+    .video-info-grid{
+        display:grid;
+        grid-template-columns:35px 1fr;
+        }
+
+  .channel-picture{
+  
+    vertical-align:top;
+    
+   /* position: relative; */
+  }
+
+  .video-stats{
+  
+    margin-top:0px;
+    padding-left:10px;
+  }
+
+  .profile-picture{
+    width:100%;
+    border-radius:60px;
+    cursor: pointer;
+  }
+
+  .tag{
+    text-decoration: none;
+    color:inherit;
+  }
+
+  /*p{
+    margin-top:0;
+    margin-bottom:0;
+    font-family: Roboto,Arial;
+    line-height:1.3;
+  } moved to general.css*/
+
+  .hover-relative-div{
+    position:relative;
+    display:inline-block;
+  }
+
+.channel-hover-grid{
+  position:absolute;
+  height:50px;
+  width:180px;
+  border:none;
+  border-radius:5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.275);
+  top:40px;
+  display:grid;
+  grid-template-columns: 50px 1fr;
+  background-color: rgb(248, 248,248);
+  pointer-events: none;
+  opacity:0;
+  transition: opacity 0.4s;
+}
+
+.profile-hover{
+  height:75%;
+  width:75%;
+  justify-self: center;
+  align-self: center; /* align-itmes , justify-content haru chai main container ma but align-self & justify-self chai afnui ma, so like on the element itself */
+  border-radius:50%;
+}
+
+.details-hover{
+  justify-content: center;
+  align-items: center;
+}
+
+.name-hover{
+  margin-top: 8px;
+  font-size:13px;
+  color:black;
+  text-decoration: none;
+  font-weight:bold;
+  font-family: Roboto,Arial;
+}
+
+.sub-hover
+{
+  font-size:10px;
+  color:gray;
+  text-decoration: none;
+  font-family: Roboto,Arial;
+}
+
+.hover-relative-div:hover .channel-hover-grid{
+  opacity: 1;
+}
+
+@media (max-width:1100px)   /* max-width and less is affected */
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+@media(max-width:760px)
+{
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width:1101px) and (max-width:2999px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width:3000px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+footer div {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:15px;
+  font-weight: 400;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 1s, transform 1s;
+}
+footer div:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
